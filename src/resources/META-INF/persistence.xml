@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="info-MySQL" >
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <properties>
+            <!-- JDBC драйвер -->
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <!-- URL для подключения к базе данных -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/simple"/>
+            <!-- Имя пользователя БД -->
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <!-- Пароль пользователя БД -->
+            <property name="javax.persistence.jdbc.password" value="Rootpassword"/>
+            <!-- Показывать SQL запросы перед выполнением -->
+
+           <!-- <property name="hibernate.format_sql" value="true"/>-->
+            <!-- Диалект языка SQL -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
+
+        </properties>
+    </persistence-unit>
+</persistence>
